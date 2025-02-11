@@ -28,9 +28,8 @@ if (number1 === number2) {
 */
 
 let num1 = 15
-let num2 = 5
 
-if (num2 % num1) {
+if (num1 % 5 === 0) {
   console.log("è perfettamente divisibile per 5")
 } else {
   console.log("non è divisibile per 5")
@@ -40,11 +39,12 @@ if (num2 % num1) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let primoNum = 8
-let secondNum = 16
+let x1 = 3
+let x2 = 5
 
-console.log(primoNum)
-console.log(secondNum - primoNum)
+if ((x1 === 8, x2 === 8, x1 + x2 === 8, x1 - x2 === 8)) {
+  console.log("Verificato")
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -56,9 +56,9 @@ let totalShoppingCart = 40
 let shipping = 10
 
 if (totalShoppingCart > 50) {
-  console.log("spedizione gratuita")
+  console.log("spedizione gratuita", totalShoppingCart)
 } else {
-  console.log("spedizione a pagamento")
+  console.log("spedizione a pagamento", totalShoppingCart + shipping)
 }
 
 let totalAmount = totalShoppingCart + shipping
@@ -77,6 +77,11 @@ console.log(sconto) // sconto di 8 euro
 let totalAmountBlackFriday = totalShoppingCart - sconto + shipping
 console.log(totalAmountBlackFriday) // 42 euro
 
+if (totalAmountBlackFriday > 50) {
+  console.log("sconto")
+} else {
+  console.log("nessuno sconto")
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -96,29 +101,30 @@ if (nu3 < nu2 < nu1) {
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
-
-console.log(typeof 37) //number
-console.log(typeof "ciao") // string
+let xx = 37
+let yy = "ciao"
+console.log(typeof xx) //number
+console.log(typeof yy) // string
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 let x = 12
 
-if (x === 11) {
-  console.log("è dispari")
-} else {
+if (x % 2 === 0) {
   console.log("è pari")
+} else {
+  console.log("è dispari")
 }
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza. */
 let val = 7
 
-if (val < 10) {
-  console.log("Meno di 10")
-} else if (val > 5) {
-  console.log("più di 5")
+if (val < 5) {
+  console.log("Meno di 5") // partire sempre dal valore è più piccolo
+} else if (val < 10) {
+  console.log("meno di 10")
 } else {
   console.log("Uguale a 10 o maggiore")
 }
@@ -151,10 +157,6 @@ console.log(me.skills)
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-
-/* Array vuoto:
-const newList [
-] */
 
 const newList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(newList)
